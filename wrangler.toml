@@ -1,0 +1,17 @@
+# wrangler.toml (wrangler v3.88.0^)
+
+name = "sl-codex"
+compatibility_date = "2024-04-01"
+
+[build]
+command = "npm run build"
+
+[site]
+bucket = "./dist"
+entry-point = "."
+
+[env.production]
+name = "sl-codex"
+
+[observability.logs]
+enabled = true
